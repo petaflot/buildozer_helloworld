@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Hello World!
 
 # (str) Package name
-package.name = myapp
+package.name = buildozer_helloworld
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test

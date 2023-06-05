@@ -16,14 +16,21 @@ To customize the skeleton to your needs, the following strings can be replaced i
 
 * `buildozer_helloworld` is the canonical name of your app
 * `Hello World!` is the full, friendly, human-redable ame of your app
-*
+* `org.test` is the package domain
 
 
 ## TODO
 
-* support for more OSes
-* github actions
-* support for packages that can be pip-installed
+* support more OSes and/or package managers
+    * IOS
+    * Debian/Ubuntu (DEB)
+    * RedHat (RPM)
+    * Gentoo (ebuid)
+    * ArchLinux (PKGBUILD)
+    * Windows
+    * MacOS
+* github actions for build
+* directory structure that allows pip installs
 * post-packaging commands (deploy app to website, etc)
 
 
@@ -31,6 +38,7 @@ To customize the skeleton to your needs, the following strings can be replaced i
 
 ## PIP requirements
 
+    pip install cython
     pip install kivy
     pip install buildozer
 
