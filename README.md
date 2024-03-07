@@ -1,9 +1,9 @@
 # buildozer_helloworld
 Kivy "Hello world" app for Android, IOs (TODO), and possibly others.
 
-Provides an example of a minimum app that will package for most known OSes.
+Is supposed to provide an example of a minimum app that will package for most known OSes, including GitHub actions.
 
-This is WIP : just started, no guarantee to work
+This is WIP : just started, no guarantee to work.
 
 
 **Instructions**
