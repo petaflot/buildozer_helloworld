@@ -1,0 +1,4 @@
+#!/usr/sbin/bash
+
+. .venv/bin/activate
+python main.py
