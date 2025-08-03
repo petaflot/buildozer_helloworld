@@ -1,5 +1,7 @@
 #!/usr/sbin/bash
 
+# TODO OS detection
+#
 # Required system packages
 #	Gentoo:
 # 		emerge dev-java/openjdk-bin:17

@@ -3,7 +3,7 @@
 # (str) Title of your application
 title = Hello World!
 
-# (str) Package name
+# (str) Package name ; lower case!!
 package.name = buildozer_helloworld
 
 # (str) Package domain (needed for android/ios packaging)
@@ -21,14 +21,14 @@ source.include_exts = py,png,jpg,kv,atlas
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
 
-# (list) List of directory to exclude (let empty to not exclude anything)
+# (list) List of directory to exclude (let empty to not exclude anything) TODO make sure it does not include hidden files/dirs ; pattern matching accepted?
 #source.exclude_dirs = tests, bin, venv
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
 #source.exclude_patterns = license,images/*/*.jpg
 
-# (str) Application versioning (method 1)
+# (str) Application versioning (method 1) TODO I know there are restrictions on the format of this string... what are they?
 version = 0.1
 
 # (str) Application versioning (method 2)
@@ -37,7 +37,10 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pyjnius
+requirements = python3,kivy,pyjnius,ephem,pendulum
+
+# keep a cache of the requirements	TODO this does not seem to work!
+android.extra_packages_dirs = ./prebuilt_wheels/
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -69,7 +72,7 @@ android.prebuild_command = sed -i 's/isinstance(arg, long)/isinstance(arg, int)/
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = osx.kivy_version = 2.3.0
+osx.kivy_version = 2.3.0
 
 #
 # Android specific
