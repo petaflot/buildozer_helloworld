@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything) TODO make sure it does not include hidden files/dirs ; pattern matching accepted?
-#source.exclude_dirs = tests, bin, venv
+source.exclude_dirs = src,bin
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
@@ -39,9 +39,6 @@ version = 0.1
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy,pyjnius,ephem,pendulum
 
-# keep a cache of the requirements	TODO this does not seem to work!
-android.extra_packages_dirs = ./prebuilt_wheels/
-
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -50,7 +47,7 @@ android.extra_packages_dirs = ./prebuilt_wheels/
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/data/buildozer_helloworld-512x512.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse

@@ -28,5 +28,8 @@ class HelloWorld(App):
 
         return Label(text=txt)
 
+    def get_application_icon(self):
+        return 'data/buildozer_helloworld-512x512.png'
+
 if __name__ == '__main__':
     HelloWorld().run()
