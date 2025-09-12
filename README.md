@@ -22,6 +22,26 @@ To customize the skeleton to your needs, the following strings can be replaced i
 
 There are also some files (ie. icons) you might want replaced ; use of `find` utility is recommended.
 
+## Branches
+
+This project is organised in branches that each provide a specific feature and should be merged based on individual needs. Current branches are:
+
+* main (minimal, does nothing besides opening a window)
+* icon (bootsplash (TODO) and icon support)
+
+## Requested branches
+
+Branches that are requested and are WIP one way or another:
+
+* Datetime with **pendulum**
+* Location (GPS etc)
+* Compass
+* Accelerometer
+* Vibrator
+* Sound recording
+* Camera
+* Phone (dial, answer, record)
+* Messaging (SMS)
 
 ## TODO
 
@@ -34,6 +54,4 @@ There are also some files (ie. icons) you might want replaced ; use of `find` ut
     * Windows
     * MacOS
 * github actions for build
-* directory structure that allows pip installs
 * post-packaging commands (deploy app to website, etc)
-
