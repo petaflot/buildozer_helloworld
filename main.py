@@ -20,6 +20,12 @@ from kivy.app import App
 from kivy.uix.label import Label
 from kivy.clock import Clock
 
+# TODO OS detection!
+platform = 'android'
+
+import pendulum
+
+
 class HelloWorld(App):
     def build(self):
         self.title = 'Hello World!'
