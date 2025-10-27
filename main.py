@@ -20,6 +20,27 @@ from kivy.app import App
 from kivy.uix.label import Label
 from kivy.clock import Clock
 
+# TODO OS detection!
+platform = 'android'
+
+if platform == 'android':
+    from pythonforandroid.recipe import RustCompiledComponentsRecipe
+    
+    class PendulumRecipe(RustCompiledComponentsRecipe):
+        version = "3.10.0"
+        url = "https://github.com/python-pendulum/pendulum/archive/refs/tags/{version}.tar.gz"
+        site_packages_name = "pendulum"
+    
+    recipe = PendulumRecipe()
+    print(f"{recipe}")
+    raise NotImplementedError
+elif platform == 'ios':
+    # apparently this should be used: https://anaconda.org/PySwift/pendulum/files
+    raise NotImplementedError
+else: # UNIX, Windows, OSX
+    import pendulum
+
+
 class HelloWorld(App):
     def build(self):
         self.title = 'Hello World!'
