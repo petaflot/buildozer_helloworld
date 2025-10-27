@@ -1,4 +1,4 @@
-#!/usr/sbin/bash
+#!/usr/bin/bash
 
 DOMAINE=`grep package.domain buildozer.spec | sed s/\ //g | cut -f 2 -d '='`
 APPNAME=`grep package.name buildozer.spec | sed s/\ //g | cut -f 2 -d '='`

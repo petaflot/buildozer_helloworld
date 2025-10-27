@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-    simple yet comprehensive "Hello World" pgrogram for buildozer
+    simple yet comprehensive "Hello World" program for buildozer
 
-    NOTE: this is not working yet!
+    see other branches in GIT repo for more features and use `git merge`
 
     author: JCZD
     date:   2023-06-03 (start project)
